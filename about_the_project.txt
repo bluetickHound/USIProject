@@ -18,3 +18,28 @@ Laravel provides most of what you need for this sort of project. I made use of a
 Front End Design:
 React is probably my favorite thing ever. I find that it fits projects like this very nicely. Anytime you are building a dynamic, data intensive view, with state changes and interactivity, I really can't imagine using anything else. Paired with an Action and Store via Reflux (similar to flux), React provides a nice component based, uni-direction state changing web app. Ill be including several screenshots to illustrate the functionality of the simple view. 
 
+I used a linux VM built with vagrant for the development of this application. As the spec did not mention it, I assume you are going to simply review the code and not try to execute it.
+
+Files of interest:
+
+Database
+  pg_database.sql
+
+View
+  resources/views/AccountManager/account_manager_index.blade.php
+  public/JS/AccountManager/account_manager_action.js
+  public/JS/AccountManager/account_manager_store.js
+  public/JS/AccountManager/account_manager_app.js
+  
+Controller
+  app/Http/Controllers/AccountManagerController.php
+
+Interface/Repository
+  app/API/IAccountManager.php
+  app/Repository/AccountManager.php
+
+Please see the screenshot dir in the root folder for some screen shots of the application. If you follow the order of the images, you can see how an account is created and how it transitions from place to place. The view also gives some of the "reports" outlined in the spec.
+
+I look forward to discussing the project further with you!
+
+Brett
