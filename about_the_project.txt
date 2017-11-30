@@ -1,0 +1,20 @@
+This is my submission of the US Internet Development Code Project: Account Manager
+
+Techs & languages used:
+Primary backend framework: Laravel (php) 
+Primary view framework: React.js + Reflux.js 
+Database: PostgreSQL 
+Others: jQuery, CSS, bootstrap.css
+
+Project Design:
+I hope I didn't stray from your project spec too much. I approached this project with the intent of building a very simple Account Manager web application, front to back. I used the tech stack and design that I am most familiar with. The database is a simple set of tables in PGSQL, the backend is good ol' Laravel, while the frontend is implemented with React. This stack is one I know and love and use on a daily basis. Given the time restraint, I wasn't able to implement all of the specific requirements in your spec, but you can probably see where I was going with the solution I am submitting. 
+
+Database Design:
+Please see pg_database.sql in the root folder
+
+Backend Design:
+Laravel provides most of what you need for this sort of project. I made use of an Interface->Repository design principle to provide an interface to be used by the Controller, implemented by a repository class.
+
+Front End Design:
+React is probably my favorite thing ever. I find that it fits projects like this very nicely. Anytime you are building a dynamic, data intensive view, with state changes and interactivity, I really can't imagine using anything else. Paired with an Action and Store via Reflux (similar to flux), React provides a nice component based, uni-direction state changing web app. Ill be including several screenshots to illustrate the functionality of the simple view. 
+
